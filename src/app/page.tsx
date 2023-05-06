@@ -4,10 +4,10 @@ import { GithubIcon, TwitterIcon } from 'lucide-react'
 
 const projects: ProjectItem[] = [
   {
-    name: 'ChallongePHP',
-    description: 'Package for interfacing with the Challonge API',
-    link: 'https://github.com/teamreflex/ChallongePHP',
-    type: 'php',
+    name: 'Collect',
+    description: 'Track your kpop album & photocard collection',
+    link: 'https://collect.jinsoul.tv/',
+    type: 'ts',
   },
   {
     name: 'fab-fetch',
@@ -17,9 +17,15 @@ const projects: ProjectItem[] = [
   },
   {
     name: 'Objekts',
-    description: 'View ARTMS & tripleS Objekt NFTs outside the Cosmo app',
+    description: 'View ARTMS & tripleS Objekt NFTs',
     link: 'https://objekts.jinsoul.tv/',
     type: 'ts',
+  },
+  {
+    name: 'ChallongePHP',
+    description: 'Package for interfacing with the Challonge API',
+    link: 'https://github.com/teamreflex/ChallongePHP',
+    type: 'php',
   },
 ]
 

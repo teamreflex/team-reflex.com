@@ -7,7 +7,7 @@ const projects: ProjectItem[] = [
     name: 'Collect',
     description: 'Track your kpop album & photocard collection',
     link: 'https://collect.jinsoul.tv/',
-    type: 'ts',
+    type: 'next',
   },
   {
     name: 'fab-fetch',
@@ -19,7 +19,7 @@ const projects: ProjectItem[] = [
     name: 'Objekts',
     description: 'View ARTMS & tripleS Objekt NFTs',
     link: 'https://objekts.jinsoul.tv/',
-    type: 'ts',
+    type: 'svelte',
   },
   {
     name: 'ChallongePHP',
@@ -31,7 +31,7 @@ const projects: ProjectItem[] = [
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col gap-6 items-center justify-center bg-slate-900">
+    <main className="flex min-h-screen flex-col gap-6 items-center justify-center bg-slate-950">
       <Logo />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mx-8">
@@ -40,10 +40,10 @@ export default function Home() {
 
       <div className="flex flex-row gap-6 items-center justify-center">
         <a href="https://github.com/teamreflex">
-          <GithubIcon size={48} />
+          <GithubIcon size={48} className="text-blue-500 fill-current animate-hue" />
         </a>
         <a href="https://twitter.com/Reflexgg">
-          <TwitterIcon size={48} />
+          <TwitterIcon size={48} className="text-blue-500 fill-current animate-hue" />
         </a>
       </div>
     </main>

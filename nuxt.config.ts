@@ -18,11 +18,12 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    static: true,
     preset: "vercel-edge",
   },
 
   routeRules: {
-    "/**": {
+    "/": {
       prerender: true,
     },
   },

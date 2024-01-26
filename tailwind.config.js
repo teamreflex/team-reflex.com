@@ -1,26 +1,29 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./app.vue",
+    "./error.vue",
   ],
   theme: {
     extend: {
       animation: {
-        hue: 'hue 30s infinite linear',
+        hue: "hue 30s infinite linear",
       },
       keyframes: {
         hue: {
           from: {
-            filter: 'hue-rotate(0deg)',
+            filter: "hue-rotate(0deg)",
           },
           to: {
-            filter: 'hue-rotate(-360deg)',
-          }
+            filter: "hue-rotate(-360deg)",
+          },
         },
-      }
+      },
     },
   },
   plugins: [],
-}
+};
